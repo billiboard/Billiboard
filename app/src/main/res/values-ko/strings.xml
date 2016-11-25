@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firstPlayer">1번플레이어</string>
+    <string name="secondPlayer">2번플레이어</string>
+    <string name="ballChange">볼체인지</string>
+    <string name="positionChange">자리체인지</string>
+</resources>
