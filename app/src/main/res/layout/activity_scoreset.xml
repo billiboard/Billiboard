@@ -14,27 +14,40 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/firstPlayer"
+            android:id="@+id/firstLayout"
             >
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
-                <TextView
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/firstPlayer"
                     android:id="@+id/textView"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="28dp" />
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="160dp"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"/>
 
             </RelativeLayout>
-
-
-
 
         </LinearLayout>
 
@@ -43,16 +56,38 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/secondPlayer"
+            android:id="@+id/secondLayout"
             >
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
-                <TextView
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/secondPlayer"/>
+                    android:text="@string/secondPlayer"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="23dp"
+                    android:id="@+id/textView2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
 
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="00"
+                    android:textSize="160dp"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/editText2"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignRight="@+id/textView2"
+                    android:layout_alignEnd="@+id/textView2" />
 
             </RelativeLayout>
 
@@ -68,7 +103,7 @@
         android:layout_gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/round_blue"
         />
 
@@ -77,10 +112,8 @@
         android:layout_height="wrap_content"
         android:text="@string/positionChange"
         android:id="@+id/positionChBtn"
-        android:layout_alignTop="@+id/ballChBtn"
-        android:layout_alignLeft="@+id/ballChBtn"
-        android:layout_alignStart="@+id/ballChBtn"
-        android:layout_marginTop="61dp"
         android:background="@drawable/round_blue"
-        />
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

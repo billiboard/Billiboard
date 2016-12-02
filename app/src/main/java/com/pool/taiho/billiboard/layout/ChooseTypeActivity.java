@@ -1,6 +1,7 @@
 package com.pool.taiho.billiboard.layout;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,11 +28,13 @@ public class ChooseTypeActivity extends Activity implements Button.OnClickListen
         scoreBtn = (Button)findViewById(R.id.scoreBtn);
         boardBtn = (Button)findViewById(R.id.boardBtn);
 
+        scoreBtn.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
-
+        Intent intent = new Intent(getApplicationContext(), ScoreSetActivity.class);
+        startActivity(intent);
     }
 }
